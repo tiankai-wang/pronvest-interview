@@ -21,6 +21,10 @@ def part1(arg):
 
 def part2(arg):
     prices = [int(x) for x in arg.split(',')]
+    if len(prices) == 0:
+        print(0)
+        return
+
     min_price = prices[0]
     max_profit = 0
 
